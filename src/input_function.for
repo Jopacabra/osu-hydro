@@ -158,7 +158,11 @@
 
         If (varName=="initialpitensor") Initialpitensor=IResult ! initialization of pi tensor
 
-        If (varName=="maxt") MaxTime=DResult ! maximum time in fm to run for
+        IF (varName=="maxt") THEN
+         MaxTime=DResult ! maximum time in fm to run for
+         print "MaxTime:"
+         print "(2X)", MaxTime
+        ENDIF
 
       End Do ! ArgIndex
 

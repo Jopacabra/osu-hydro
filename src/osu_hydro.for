@@ -56,6 +56,9 @@ C   [5] H.Song, Ph.D thesis 2009, arXiv:0908.3656 [nucl-th].
       double precision :: DT
       common /DT/ DT
 
+      double precision :: MaxTime
+      common /MaxTime/ MaxTime
+
       double precision :: DX, DY
       common /DXY/ DX, DY
 
