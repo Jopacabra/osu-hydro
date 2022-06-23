@@ -160,7 +160,7 @@
 
         IF (varName=="maxt") THEN
          MaxTime=DResult ! maximum time in fm to run for
-         print "MaxTime:"
+         print *, "MaxTime: "
          print "(2X)", MaxTime
         ENDIF
 
