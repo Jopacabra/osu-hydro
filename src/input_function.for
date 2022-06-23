@@ -56,6 +56,9 @@
       double precision :: DT
       common /DT/ DT
 
+      double precision :: MaxTime
+      common /MaxTime/ MaxTime
+
       double precision :: DX, DY
       common /DXY/ DX, DY
 
