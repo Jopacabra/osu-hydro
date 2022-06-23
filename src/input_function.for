@@ -161,7 +161,7 @@
         IF (varName=="maxt") THEN
          MaxTime=DResult ! maximum time in fm to run for
          print *, "MaxTime: "
-         print "(2X)", MaxTime
+         print *, MaxTime
         ENDIF
 
       End Do ! ArgIndex
