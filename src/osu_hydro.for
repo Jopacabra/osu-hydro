@@ -150,8 +150,7 @@ C   [5] H.Song, Ph.D thesis 2009, arXiv:0908.3656 [nucl-th].
 
       MaxT = int(MaxTime/DT)
 
-      Print '(I4, 2X)',
-     &      MaxT, MaxTime
+      Print *, MaxT, MaxTime
 
 
 
