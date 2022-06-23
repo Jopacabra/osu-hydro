@@ -122,6 +122,7 @@ C   [5] H.Song, Ph.D thesis 2009, arXiv:0908.3656 [nucl-th].
       Read(1,*) VisBulkWidth     ! width of (zeta/s)(T) [GeV]
       Read(1,*) IRelaxBulk       ! bulk relaxation time: critical slowing down (0), constant (1), 1.5/(2*pi*T) (2), ?? (3), ?? (4)
       Read(1,*) BulkTau          ! constant bulk relaxation time for IRelaxBulk == 1
+      Read(1,*) MaxTime          ! maximum time in fm to run for
 
       Close(1)
 
@@ -143,7 +144,7 @@ C   [5] H.Song, Ph.D thesis 2009, arXiv:0908.3656 [nucl-th].
 
       DZ=0.01d0
 
-      MaxT = int(40.0/DT)
+      MaxT = int(MaxTime/DT)
 
       open(99, file='surface.dat', access='stream', status='replace')
       open(92,File='anisotropies.dat',status='REPLACE')
