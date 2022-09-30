@@ -44,6 +44,13 @@
         inquire(file=find_data_file, exist=file_exists)
         if (file_exists) return
 
+        find_data_file = '/fs1/home/jbahder/sstack/rhel_8/stacks/'//
+	1       'spack/home_18/opt/spack/linux-rhel8-x86_64_v3/'//
+	1       'gcc-8.5.0/osu-hydro-master-f6f6viekbxx3pz4uclf2h'//
+	1       'rvv5xhydpdc/share' // suffix
+        inquire(file=find_data_file, exist=file_exists)
+        if (file_exists) return
+
         print *, basename, ' not found'
         call exit(1)
       end function
