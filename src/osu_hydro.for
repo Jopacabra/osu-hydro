@@ -2343,7 +2343,7 @@ C            Print *, 'time',time,'Stotal', Stotal,StotalSv,StotalBv
       DO J=NYPhy0,NYPhy
       DO I=NXPhy0,NXPhy
         write(2297, '(31G18.8E3)')Time, I*DX, J*DY, 
-     &                  Temp(I,J,NZ0)*0.1973269788,
+     &                  Temp(I,J,NZ0),
      &                  Vx(I,J,NZ0),
      &                  Vy(I,J,NZ0)
       enddo
